@@ -1,8 +1,8 @@
-# Design System of Expertia.ai
+# Design System of Expertia.AI
 
 <p>
-    <a href="https://www.expertia.ai/" >
-      <img alt="Expertia.ai-design-system" width="350" style="background-color:white;" src="https://www.expertia.ai/expertiaLogotext.png">
+    <a href="https://www.expertia.ai/"  >
+      <img alt="Expertia.ai-design-system" style="background-color:white;" width="350" src="https://www.expertia.ai/expertiaLogotext.png">
     </a><br>
     Use Tailwind CSS to build the components
 </p>
@@ -20,7 +20,7 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
 1. Install all dependencies using NPM by running the following command:
 
 ```bash
-npm install experti.ai/ui
+npm install expertiaai/ui
 ```
 
 ---
