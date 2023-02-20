@@ -47,7 +47,7 @@ npm install -S "git+https://expertiaai/ui.git"
     3. To authenticate by logging in to npm, use the `npm login` command, replacing USERNAME with your GitHub username, TOKEN with your personal access token (classic), and PUBLIC-EMAIL-ADDRESS with your email address.
 
     ````
-    npm login --scope=@NAMESPACE --auth-type=legacy --registry=https://npm.pkg.github.com
+    npm login --scope=@expertiaai --auth-type=legacy --registry=https://npm.pkg.github.com
 
     > Username: USERNAME
     > Password: TOKEN
