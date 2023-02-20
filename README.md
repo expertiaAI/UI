@@ -27,24 +27,24 @@ npm install -S "git+https://expertiaai/ui.git"
 
 1. Authenticate to GitHub Packages.
 
-    1. Get the personal access token 
+    1. Get the `personal access token` 
     
-    -- In the upper-right corner of any page, click your profile photo, then click Settings.
-    -- In the left sidebar, click  Developer settings.
+    -- In the upper-right corner of any page, click your profile photo, then click `Settings`.
+    -- In the left sidebar, click  `Developer settings`.
     -- In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
-    -- Click Generate new token.
+    -- Click `Generate new token`.
     -- Under Token name, enter a name for the token.
-    -- Select repo, write and read
-    -- Press Generate Token.
+    -- Select `repo, write and read`
+    -- Press `Generate Token`.
     -- Copy the Token Generated.
 
-    2. Create a .npmrc file and add the personal access token
+    2. Create a `.npmrc file` and add the personal access token
 
     ```
     //npm.pkg.github.com/:_authToken=TOKEN
     ```
 
-    3. To authenticate by logging in to npm, use the npm login command, replacing USERNAME with your GitHub username, TOKEN with your personal access token (classic), and PUBLIC-EMAIL-ADDRESS with your email address.
+    3. To authenticate by logging in to npm, use the `npm login` command, replacing USERNAME with your GitHub username, TOKEN with your personal access token (classic), and PUBLIC-EMAIL-ADDRESS with your email address.
 
     ````
     npm login --scope=@NAMESPACE --auth-type=legacy --registry=https://npm.pkg.github.com
