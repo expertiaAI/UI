@@ -3,7 +3,7 @@
 <p>
     <a href="https://www.expertia.ai/"  >
       <img alt="Expertia.ai-design-system" style="background-color:white;" width="200" src="https://avatars.githubusercontent.com/u/77336561?s=200&v=4">
-    </a><br>
+    <h1>Expertia.Ai</h1></a><br>
     Use Tailwind CSS to build the components
 </p>
 
@@ -17,13 +17,41 @@ By integrating this package as a plugin to your current Tailwind CSS project, yo
 
 Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js</a> and <a href="https://tailwindcss.com/" rel="nofollow" >Tailwind CSS</a> installed.
 
-1. Install all dependencies using NPM by running the following command:
+<!-- 1. Install all dependencies using NPM by running the following command:
 
 ```bash
 npm install -S "git+https://expertiaai/ui.git" 
 ```
 
----
+--- -->
+
+1. Create a .npmrc file in root directory to include specifying GitHub Packages URL and the namespace where the package is hosted.
+
+````
+@expertiaai:registry=https://npm.pkg.github.com
+````
+
+2. Configure package.json in your project to use the package you are installing. To add your package dependencies to the package.json file for GitHub Packages, specify the full-scoped package name, such as @my-org/server.
+
+````
+{
+  "name": "@my-org/server",
+  "version": "1.0.0",
+  "description": "Server app that uses the <organization_name>/<package_name> package",
+  "main": "index.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "expertiaai/ui": "1.0.0"
+  }
+}
+````
+
+3. Install package
+
+````
+npm install
+````
 
 Here's an example how you can import and create a new Modal component inside JavaScript:
 
