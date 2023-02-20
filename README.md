@@ -27,8 +27,10 @@ npm install expertiaai/ui
 
 Here's an example how you can import and create a new Modal component inside JavaScript:
 
+1. Buttons
+
 ```javascript
-import { Button } from "@sexpertiaai/ui";
+import { Button } from "@expertiaai/ui";
 
 function Example() {
   return (
