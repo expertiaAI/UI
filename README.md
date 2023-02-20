@@ -61,7 +61,7 @@ npm install -S "git+https://expertiaai/ui.git"
 @expertiaai:registry=https://npm.pkg.github.com
 ````
 
-3. Configure package.json in your project to use the package you are installing. To add your package dependencies to the package.json file for GitHub Packages, specify the full-scoped package name, such as @my-org/server.
+3. Configure `package.json` in your project to use the package you are installing. To add your package `dependencies` to the `package.json` file for GitHub Packages, specify the full-scoped package name, such as @my-org/server.
 
 ````
 {
@@ -72,7 +72,7 @@ npm install -S "git+https://expertiaai/ui.git"
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "expertiaai/ui": "1.0.0"
+    "expertiaai/ui": "0.0.1"
   }
 }
 ````
