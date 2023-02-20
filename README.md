@@ -83,7 +83,7 @@ npm install -S "git+https://expertiaai/ui.git"
 npm install
 ````
 
-Here's an example how you can import and create a new Modal component inside JavaScript:
+Here's an example how you can import and create a new component inside JavaScript:
 
 1. Buttons
 
