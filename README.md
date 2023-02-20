@@ -29,14 +29,14 @@ npm install -S "git+https://expertiaai/ui.git"
 
     1. Get the `personal access token` 
     
-    -- In the upper-right corner of any page, click your profile photo, then click `Settings`.
-    -- In the left sidebar, click  `Developer settings`.
-    -- In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
-    -- Click `Generate new token`.
-    -- Under Token name, enter a name for the token.
-    -- Select `repo, write and read`
-    -- Press `Generate Token`.
-    -- Copy the Token Generated.
+      1. In the upper-right corner of any page, click your profile photo, then click `Settings`.
+      2. In the left sidebar, click  `Developer settings`.
+      3. In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
+      4. Click `Generate new token`.
+      5. Under Token name, enter a name for the token.
+      6. Select `repo, write and read`
+      7. Press `Generate Token`.
+      8. Copy the Token Generated.
 
     2. Create a `.npmrc file` and add the personal access token
 
@@ -55,7 +55,7 @@ npm install -S "git+https://expertiaai/ui.git"
     ````
 
 
-2. Create a .npmrc file in root directory to include specifying GitHub Packages URL and the namespace where the package is hosted.
+2. Edit the .npmrc file in root directory to include specifying GitHub Packages URL and the namespace where the package is hosted.
 
 ````
 @expertiaai:registry=https://npm.pkg.github.com
@@ -67,7 +67,7 @@ npm install -S "git+https://expertiaai/ui.git"
 {
   "name": "@my-org/server",
   "version": "1.0.0",
-  "description": "Server app that uses the <organization_name>/<package_name> package",
+  "description": "",
   "main": "index.js",
   "author": "",
   "license": "MIT",
