@@ -29,14 +29,14 @@ npm install -S "git+https://expertiaai/ui.git"
 
     1. Get the `personal access token` 
     
-      1. In the upper-right corner of any page, click your profile photo, then click `Settings`.
-      2. In the left sidebar, click  `Developer settings`.
-      3. In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
-      4. Click `Generate new token`.
-      5. Under Token name, enter a name for the token.
-      6. Select `repo, write and read`
-      7. Press `Generate Token`.
-      8. Copy the Token Generated.
+    -- In the upper-right corner of any page, click your profile photo, then click `Settings`.
+    -- In the left sidebar, click  `Developer settings`.
+    -- In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
+    -- Click `Generate new token`.
+    -- Under Token name, enter a name for the token.
+    -- Select `repo, write and read`
+    -- Press `Generate Token`.
+    -- Copy the Token Generated.
 
     2. Create a `.npmrc file` and add the personal access token
 
