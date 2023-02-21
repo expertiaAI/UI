@@ -3,8 +3,8 @@ import * as Checkbox from "@radix-ui/react-checkbox";
 
 import { twMerge } from "tailwind-merge";
 
-export const Checkbox1 = ({ className, ...rest }) => {
-  const [checked, setChecked] = React.useState(false);
+export const Checkbox1 = ({ className,defaultChecked, ...rest }) => {
+  const [checked, setChecked] = React.useState(defaultChecked);
 
   const combined = twMerge(
     checked
@@ -14,7 +14,6 @@ export const Checkbox1 = ({ className, ...rest }) => {
     className
   );
 
-  // useEffect(() => console.log(checked), [checked]);
   return (
     <div className="">
       <form>
@@ -27,7 +26,6 @@ export const Checkbox1 = ({ className, ...rest }) => {
             })
           }
           className={combined}
-          // defaultChecked
           {...rest}
         >
           <Checkbox.Indicator>

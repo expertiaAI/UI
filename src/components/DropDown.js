@@ -47,7 +47,6 @@ const SelectItem = React.forwardRef(
       <Select.Item
         className="hover:bg-[#6D5DE7] hover:text-white text-sm p-1 m-1 flex items-center rounded-md pl-3 "
         {...props}
-        onClick={()=>{console.log('qwe')}}
         ref={forwardedRef}
       >
         <Select.ItemText>{children}</Select.ItemText>
