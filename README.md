@@ -72,7 +72,7 @@ npm install -S "git+https://expertiaai/ui.git"
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@expertiaai/ui": "0.0.1"
+    "@expertiaai/ui": "github:expertiaai/ui"
   }
 }
 ````

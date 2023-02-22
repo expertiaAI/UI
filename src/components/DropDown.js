@@ -3,7 +3,7 @@ import * as Select from "@radix-ui/react-select";
 
 import { twMerge } from "tailwind-merge";
 
-export const DropDown = ({ children, className, ...rest }) => {
+export const DropDown = ({ children, className,items, ...rest }) => {
 
     const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded-lg px-4 py-2.5 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
 
@@ -24,7 +24,7 @@ export const DropDown = ({ children, className, ...rest }) => {
           <Select.Group>
 
             <Select.Label className="text-sm text-gray-400 pl-3 m-1" >{children}</Select.Label>
-            {rest.items.map((e,i)=>{
+            {items.map((e,i)=>{
                 return <SelectItem value={e.value?e.value:e} key={e.id?e.id:i}>{e}</SelectItem>
             })}
 
