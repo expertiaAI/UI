@@ -3,11 +3,11 @@ import * as RadioGroup from "@radix-ui/react-radio-group";
 import { twMerge } from "tailwind-merge";
 
 export const Radio = ({ children,color, className, ...rest }) => {
-  const colorMerge = twMerge('',color)
+  const combined = twMerge('RadioGroupRoot flex flex-col gap-2.5',className)
   return (
-    <form className={className}>
+    <form >
       <RadioGroup.Root
-        className="RadioGroupRoot flex flex-col gap-2.5"
+        className={combined}
         defaultValue="default"
         aria-label="View density"
         {...rest}
