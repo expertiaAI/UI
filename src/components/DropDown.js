@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 export const DropDown = ({ children, className, ...rest }) => {
 
-    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded-lg px-4 py-2 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
+    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded-lg px-4 py-2.5 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
 
     return(
   <Select.Root {...rest} >
@@ -25,7 +25,7 @@ export const DropDown = ({ children, className, ...rest }) => {
 
             <Select.Label className="text-sm text-gray-400 pl-3 m-1" >{children}</Select.Label>
             {rest.items.map((e,i)=>{
-                return <SelectItem value={e} key={i}>{e}</SelectItem>
+                return <SelectItem value={e.value?e.value:e} key={e.id?e.id:i}>{e}</SelectItem>
             })}
 
           </Select.Group>
