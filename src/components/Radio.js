@@ -15,13 +15,15 @@ export const Radio = ({ children,color, className, ...rest }) => {
         {children.map((e, i) => (
           <div key={i} className="flex items-center">
             <RadioGroup.Item
-              className={`relative w-5 h-5 bg-white rounded-full border-solid border-[2px] border-gray-300`}
+              className={`relative RadioGroupItem w-5 h-5 bg-white rounded-full border-solid border-[2px] border-gray-300`}
               value={e}
               id={i}
             >
 
               <RadioGroup.Indicator className={`absolute left-[3px] top-[3px] w-2.5 h-2.5 rounded-2xl ${color?`bg-${color}`:'bg-[#6D5DE7]'}`} />
-
+              <RadioGroup.Indicator
+                className={`absolute -left-[12.5%] -top-[12.5%] w-5 h-5 bg-transparent ${color?`text-${color} border-${color}`:'text-[#6D5DE7] border-[#6D5DE7]'} text-[#6D5DE7] rounded-full border-solid border-[2px]  border-[#6D5DE7]`}
+              />
 
             </RadioGroup.Item>
             <label className="Label pl-3" htmlFor={i}>
