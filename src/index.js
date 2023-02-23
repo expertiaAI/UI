@@ -21,6 +21,7 @@ export {TimePicker} from "./components/TimePicker"
 export {Toast} from "./components/Toast"
 export {ToolTip} from "./components/ToolTip"
 export {Upload} from "./components/UploadFile"
+export {Upload2} from "./components/UploadFile2"
 export {Modal} from "./components/Modal2"
 
 

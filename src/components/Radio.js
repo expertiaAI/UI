@@ -15,7 +15,7 @@ export const Radio = ({ children,color, className, ...rest }) => {
         {children.map((e, i) => (
           <div key={i} className="flex items-center">
             <RadioGroup.Item
-              className={`relative RadioGroupItem w-5 h-5 bg-white rounded-full border-solid border-[2px] border-gray-300`}
+              className={`relative w-5 h-5 bg-white rounded-full border-solid border-[2px] border-gray-300`}
               value={e}
               id={i}
             >
