@@ -16,7 +16,7 @@ export const Radio = ({ children, color, className, ...rest }) => {
           <div key={i} className="flex items-center">
             <RadioGroup.Item
               className={`relative  w-[20px] h-[20px] bg-white rounded-full border-solid border-[2px] border-gray-300`}
-              value={e}
+              value={e.value}
               id={i}
             >
               <RadioGroup.Indicator
@@ -33,7 +33,7 @@ export const Radio = ({ children, color, className, ...rest }) => {
               />
             </RadioGroup.Item>
             <label className="Label pl-3" htmlFor={i}>
-              {e}
+              {e.label}
             </label>
           </div>
         ))}
