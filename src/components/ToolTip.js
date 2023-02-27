@@ -4,7 +4,7 @@ import { twMerge } from "tailwind-merge";
 
 export const ToolTip = ({ children, className, text, ...rest }) => {
   const combined = twMerge(
-    "bg-[#E9E7FA] text-black text-xs px-5 rounded-lg shadow1 p-2",
+    "bg-[#E9E7FA] text-black text-xs px-5 rounded shadow1 p-2",
     className
   );
   return (

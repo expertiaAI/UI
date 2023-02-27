@@ -19,7 +19,7 @@ export const Button = ({
     }  duration-200 rounded-[4px]  ${
       small
         ? " text-sm px-4 py-2.5 font-medium "
-        : " text-md  py-[12px] px-6 font-semibold "
+        : " text-md  py-[14px] px-6 font-semibold "
     } `,
     `${
       disabled
