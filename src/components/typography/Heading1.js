@@ -2,8 +2,8 @@ import React from 'react'
 import { twMerge } from 'tailwind-merge'
 
 export const H1=({children,className,...rest}) =>{
-    const combined = twMerge(" text-[64px] font-inter leading-[80px] font-bold",className)
+    const combined = twMerge(" text-[64px] text-[#14102F] font-inter leading-[80px] font-bold",className)
   return (
-    <div className={combined} {...rest}>{children}</div>
+    <span className={combined} {...rest}>{children}</span>
   )
 }
