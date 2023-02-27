@@ -9,7 +9,8 @@ module.exports = {
         filename: 'index.js',
         path: path.resolve(__dirname, './dist'),
         libraryTarget: 'umd',
-        umdNamedDefine: true
+        umdNamedDefine: true,
+        globalObject: 'this',
     },
     externalsPresets: {node: true},
     externals: [nodeExternals()],
