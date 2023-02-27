@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -11,7 +12,10 @@ module.exports = {
       transparent: 'transparent',
       current: 'currentColor',
       ...colors
-    }
+    },    fontFamily: {
+      inter: ["Inter", "sans-serif"],
+      sans: ["Proxima Nova", ...defaultTheme.fontFamily.sans],
+    },
   },
   plugins: [],
 }
