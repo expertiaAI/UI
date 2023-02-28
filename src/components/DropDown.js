@@ -5,20 +5,20 @@ import { twMerge } from "tailwind-merge";
 
 export const DropDown = ({ children, className,options, ...rest }) => {
 
-    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded-lg px-4 py-2.5 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
+    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded px-4 py-2.5 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
 
     return(
   <Select.Root {...rest} >
     <Select.Trigger className={combined}>
       <Select.Value placeholder={children} />
       <Select.Icon className=" pl-2 text-black">
-      <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.18179 6.18181C4.35753 6.00608 4.64245 6.00608 4.81819 6.18181L7.49999 8.86362L10.1818 6.18181C10.3575 6.00608 10.6424 6.00608 10.8182 6.18181C10.9939 6.35755 10.9939 6.64247 10.8182 6.81821L7.81819 9.81821C7.73379 9.9026 7.61934 9.95001 7.49999 9.95001C7.38064 9.95001 7.26618 9.9026 7.18179 9.81821L4.18179 6.81821C4.00605 6.64247 4.00605 6.35755 4.18179 6.18181Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="208 96 128 176 48 96" fill="none" stroke="#6B6B74" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
       </Select.Icon>
     </Select.Trigger>
     <Select.Portal className="">
       <Select.Content className="bg-white border-[1px] p-1 rounded-lg">
         <Select.ScrollUpButton className="flex items-center justify-center hover:bg-gray-100">
-        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.18179 8.81819C4.00605 8.64245 4.00605 8.35753 4.18179 8.18179L7.18179 5.18179C7.26618 5.0974 7.38064 5.04999 7.49999 5.04999C7.61933 5.04999 7.73379 5.0974 7.81819 5.18179L10.8182 8.18179C10.9939 8.35753 10.9939 8.64245 10.8182 8.81819C10.6424 8.99392 10.3575 8.99392 10.1818 8.81819L7.49999 6.13638L4.81819 8.81819C4.64245 8.99392 4.35753 8.99392 4.18179 8.81819Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
+        <svg className="" width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4.18179 8.81819C4.00605 8.64245 4.00605 8.35753 4.18179 8.18179L7.18179 5.18179C7.26618 5.0974 7.38064 5.04999 7.49999 5.04999C7.61933 5.04999 7.73379 5.0974 7.81819 5.18179L10.8182 8.18179C10.9939 8.35753 10.9939 8.64245 10.8182 8.81819C10.6424 8.99392 10.3575 8.99392 10.1818 8.81819L7.49999 6.13638L4.81819 8.81819C4.64245 8.99392 4.35753 8.99392 4.18179 8.81819Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd"></path></svg>
         </Select.ScrollUpButton>
         <Select.Viewport className="">
           <Select.Group>

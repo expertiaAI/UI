@@ -3,7 +3,7 @@ import Select from "react-select";
 
 
 const colourStyles = {
-  control: styles => ({ ...styles,borderRadius: "8px" }),
+  control: styles => ({ ...styles,borderRadius: "4px" }),
   option:(styles,{isSelected,isFocused})=>{
     return{
       paddingLeft: '10px',
