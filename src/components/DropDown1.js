@@ -11,7 +11,7 @@ const colourStyles = {
       paddingBottom: '4px',
       marginLeft: '8px',
       marginRight: '8px',
-      borderRadius:"8px",
+      borderRadius:"4px",
       marginTop:"4px",
       marginBottom:"4px",
       backgroundColor: isSelected ? "#6D5DE7"
