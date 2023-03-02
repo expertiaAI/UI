@@ -20,50 +20,49 @@ Make sure that you have <a href="https://nodejs.org/en/" rel="nofollow" >Node.js
 <!-- 1. Install all dependencies using NPM by running the following command:
 
 ```bash
-npm install -S "git+https://expertiaai/ui.git" 
+npm install -S "git+https://expertiaai/ui.git"
 ```
 
 --- -->
 
 1. Authenticate to GitHub Packages.
 
-    1. Get the `personal access token` 
-    
-    -- In the upper-right corner of any page, click your profile photo, then click `Settings`.
-    -- In the left sidebar, click  `Developer settings`.
-    -- In the left sidebar, under  Personal access tokens, click Fine-grained tokens.
-    -- Click `Generate new token`.
-    -- Under Token name, enter a name for the token.
-    -- Select `repo, write and read`
-    -- Press `Generate Token`.
-    -- Copy the Token Generated.
+   1. Get the `personal access token`
 
-    2. Create a `.npmrc file` and add the personal access token
+   -- In the upper-right corner of any page, click your profile photo, then click `Settings`.
+   -- In the left sidebar, click `Developer settings`.
+   -- In the left sidebar, under Personal access tokens, click Fine-grained tokens.
+   -- Click `Generate new token`.
+   -- Under Token name, enter a name for the token.
+   -- Select `repo, write and read`
+   -- Press `Generate Token`.
+   -- Copy the Token Generated.
 
-    ```
-    //npm.pkg.github.com/:_authToken=TOKEN
-    ```
+   2. Create a `.npmrc file` and add the personal access token
 
-    3. To authenticate by logging in to npm, use the `npm login` command, replacing USERNAME with your GitHub username, TOKEN with your personal access token (classic), and PUBLIC-EMAIL-ADDRESS with your email address.
+   ```
+   //npm.pkg.github.com/:_authToken=TOKEN
+   ```
 
-    ````
-    npm login --scope=@expertiaai --auth-type=legacy --registry=https://npm.pkg.github.com
+   3. To authenticate by logging in to npm, use the `npm login` command, replacing USERNAME with your GitHub username, TOKEN with your personal access token (classic), and PUBLIC-EMAIL-ADDRESS with your email address.
 
-    > Username: USERNAME
-    > Password: TOKEN
+   ```
+   npm login --scope=@expertiaai --auth-type=legacy --registry=https://npm.pkg.github.com
 
-    ````
+   > Username: USERNAME
+   > Password: TOKEN
 
+   ```
 
 2. Edit the .npmrc file in root directory to include specifying GitHub Packages URL and the namespace where the package is hosted.
 
-````
+```
 @expertiaai:registry=https://npm.pkg.github.com
-````
+```
 
 3. Configure `package.json` in your project to use the package you are installing. To add your package `dependencies` to the `package.json` file for GitHub Packages, specify the full-scoped package name, such as @my-org/server.
 
-````
+```
 {
   "name": "@my-org/server",
   "version": "1.0.0",
@@ -75,13 +74,13 @@ npm install -S "git+https://expertiaai/ui.git"
     "@expertiaai/ui": "github:expertiaai/ui"
   }
 }
-````
+```
 
 4. Install package
 
-````
+```
 npm install
-````
+```
 
 Here's an example how you can import and create a new component inside JavaScript:
 
@@ -94,7 +93,9 @@ function Example() {
   return (
     <div>
       <p>Primary Large</p>
-      <Button><p>Button primary</p></Button>
+      <Button>
+        <p>Button primary</p>
+      </Button>
 
       <p>Primary Small </p>
       <Button small>Button Small</Button>
@@ -103,11 +104,28 @@ function Example() {
       <Button secondary>Button Secondary</Button>
 
       <p>Secondary Small</p>
-      <Button secondary small>Button Secondary</Button>
+      <Button secondary small>
+        Button Secondary
+      </Button>
+
+      <p>Disabled Large</p>
+      <Button disabled>Button Secondary</Button>
+      <p>Disabled Small</p>
+
+      <Button disabled small>
+        Button Secondary
+      </Button>
     </div>
   );
 }
 ```
+<br />
+<p align="center">
+<img width="800" height=auto src="./images/img1.png" alt="Types of buttons">
+</p>
 
-
+Primary Large Button is the Default Button 
+`samll` - converts to Small button
+`secondary` - converts to Secondary (outlined) Button
+`disabled` - converts to Disabled Button
 

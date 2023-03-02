@@ -24,7 +24,7 @@ export const Switch1 = ({
     <div onClick={() => setBlock((e) => !e)} className="flex items-center">
       <Switch.Root className={combined} id="airplane-mode" {...rest}>
         <Switch.Thumb
-          className={`w-4 h-4 rounded-3xl bg-white block  ${
+          className={`w-[16px] h-[16px] rounded-3xl bg-white block  ${
             block ? "translate-x-[18px]" : "translate-x-[2px]"
           } duration-200`}
         />
