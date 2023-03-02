@@ -122,7 +122,7 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="https://github.com/expertiaAI/UI" alt="Types of buttons">
+<img width="800" height=auto src="github.png" alt="Types of buttons">
 </p>
 
 Primary Large Button is the Default Button
