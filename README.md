@@ -110,8 +110,8 @@ function Example() {
 
       <p>Disabled Large</p>
       <Button disabled>Button Secondary</Button>
-      <p>Disabled Small</p>
 
+      <p>Disabled Small</p>
       <Button disabled small>
         Button Secondary
       </Button>
@@ -119,13 +119,13 @@ function Example() {
   );
 }
 ```
+
 <br />
 <p align="center">
-<img width="800" height=auto src="./images/img1.png" alt="Types of buttons">
+<img width="800" height=auto src="https://github.com/expertiaAI/UI" alt="Types of buttons">
 </p>
 
-Primary Large Button is the Default Button 
+Primary Large Button is the Default Button
 `samll` - converts to Small button
 `secondary` - converts to Secondary (outlined) Button
 `disabled` - converts to Disabled Button
-
