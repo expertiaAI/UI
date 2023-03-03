@@ -208,7 +208,6 @@ export default function Example() {
 
 Default chips are not deletable and don't have any avatars, can add `avatar` and `deletable` tags.
 
-
 4. DropDown
 
 ```javascript
@@ -246,7 +245,6 @@ export default function Example() {
 
 The options for this dropdown are being passed as an array of strings through the "options" prop.The prop "onValueChange" that is being used to capture the value of the selected option.
 
-
 5. Input
 
 ```javascript
@@ -255,7 +253,7 @@ import { Input } from "@expertiaai/ui";
 export default function Example() {
   return (
     <div>
-       <Input className="w-96" placeholder="Write your input here" />
+      <Input className="w-96" placeholder="Write your input here" />
     </div>
   );
 }
@@ -266,8 +264,6 @@ export default function Example() {
 <img width="800" height=auto src="input1.png" >
 </p>
 
-
-
 6. Label
 
 ```javascript
@@ -276,8 +272,12 @@ import { Label } from "@expertiaai/ui";
 export default function Example() {
   return (
     <div>
-      <div><Label>Label 1</Label></div>
-      <div><Label className='bg-green-500'>Label 2</Label></div>
+      <div>
+        <Label>Label 1</Label>
+      </div>
+      <div>
+        <Label className="bg-green-500">Label 2</Label>
+      </div>
     </div>
   );
 }
@@ -288,7 +288,7 @@ export default function Example() {
 <img width="800" height=auto src="Label.png" >
 </p>
 
-You can change the color of the label by adding a className 
+You can change the color of the label by adding a className
 
 7. Toast
 
@@ -347,17 +347,19 @@ export default function Example() {
 </p>
 
 Toast has 5 input properties
-  1. `open` - Boolean value
-  2. `setOpen` - function to set `open` property.
-  3. `time` - duration till the toast auto hides.
-  4. `label` - simple label for trigger.
-  5. `position` - This property specifies the position of the message. Property given in `camel case`. The default is always `Bottom Left`.
-    1. top
-    2. topLeft
-    3. topRight
-    4. bottom
-    5. bottomLeft
-    6. bottomRight
+
+A. `open` - Boolean value
+B. `setOpen` - function to set `open` property.
+C. `time` - duration till the toast auto hides.
+D. `label` - simple label for trigger.
+E. `position` - This property specifies the position of the message. Property given in `camel case`. The default is always `Bottom Left`.
+top,
+topLeft,
+topRight,
+bottom,
+bottomLeft,
+bottomRight
+<br />
 
 8. Pagination
 
@@ -365,12 +367,16 @@ Toast has 5 input properties
 import { Pagination } from "@expertiaai/ui";
 
 export default function Example() {
-
-    const [currentColor,setCurrentPage] = useState(1)
+  const [currentColor, setCurrentPage] = useState(1);
 
   return (
     <div>
-      <Pagination currentPage ={currentColor} totalPages={10} onPrev={setCurrentPage} onNext={setCurrentPage} />
+      <Pagination
+        currentPage={currentColor}
+        totalPages={10}
+        onPrev={setCurrentPage}
+        onNext={setCurrentPage}
+      />
     </div>
   );
 }
@@ -382,9 +388,179 @@ export default function Example() {
 </p>
 
 Pagination has 3 properties as input ,
-  1. `currentPage` - Specifies the current page.
-  2. `totalages` - Specifies total number of pages.
-  3. `onPrev` & `onNext` - Specifies the function to trigger on clicking next or prev.
 
+A. `currentPage` - Specifies the current page.
+B. `totalages` - Specifies total number of pages.
+C. `onPrev` & `onNext` - Specifies the function to trigger on clicking next or prev.
 
-  
+9. ProgressBar
+
+```javascript
+import { ProgressBar } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <ProgressBar progress={90} />
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="progressbar.png" >
+</p>
+
+Progress bar takes only one input `progress` which basically indicates the progress in percentage.
+
+10. Radio
+
+```javascript
+import { Radio } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <Radio onValueChange={(e) => console.log(e)}>{initialOptions}</Radio>
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="radio.png" >
+</p>
+
+The options for this dropdown are being passed as an array of objects with 2 keys `value` and `label` .The prop "onValueChange" that is being used to capture the value of the selected option.
+
+11. Ratings
+
+```javascript
+import { Radio } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <div className="grid grid-cols-2 text-yellow-500">
+        3.3
+        <Ratings ratings={3.3} />
+      </div>
+      <div className="grid grid-cols-2 text-red-500">
+        2.0
+        <Ratings ratings={2} size={20} />
+      </div>
+      <div className="grid grid-cols-2 text-green-500">
+        4.5
+        <Ratings ratings={4.5} size={25} />
+      </div>
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="ratings.png" >
+</p>
+
+Ratings will take 2 props ratings and size.
+
+12. Selector
+
+```javascript
+import { Slider1 } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <Slider1 value={val} onValueChange={(e) => setVal(e)} />
+      <div className="py-2">{val}</div>
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="slider.png" >
+</p>
+
+Slider takes 2 props ,one is the `value` and the other is `onValueChange`.
+
+13. Switch
+
+```javascript
+import { Switch1 } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <div>
+        <span>Default Switch</span>
+        <Switch1 />
+      </div>
+      <div>
+        <span>Default Checked Switch</span>
+        <Switch1 defaultChecked />
+      </div>
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="switch.png" >
+</p>
+
+Switch take only one prop `defaultChecked` if the switch need to be checked by default.
+
+14. ToolTip
+
+```javascript
+import { ToolTip } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <ToolTip
+        className="bg-white text-md border shadow-md px-5"
+        text="important message !"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="15"
+          height="15"
+          fill="#1f0505"
+          viewBox="0 0 256 256"
+        >
+          <rect width="256" height="256" fill="none"></rect>
+          <circle
+            cx="128"
+            cy="128"
+            r="96"
+            fill="none"
+            stroke="#1f0505"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          ></circle>
+          <polyline
+            points="120 124 128 124 128 176 136 176"
+            fill="none"
+            stroke="#1f0505"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="24"
+          ></polyline>
+          <circle cx="126" cy="84" r="16"></circle>
+        </svg>
+      </ToolTip>
+    </div>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="tooltip.png" >
+</p>
+
+ToolTip takes only one prop `text` which contains the text.
+
