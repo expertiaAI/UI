@@ -23,7 +23,7 @@ export {ToolTip} from "./components/ToolTip"
 export {Upload} from "./components/UploadFile"
 export {Upload2} from "./components/UploadFile2"
 export {Modal} from "./components/Modal2"
-
+export {LoadingCircular} from "./components/LoadingCircular"
 
 export {Body1} from "./components/typography/Body1"
 export {Body2} from "./components/typography/Body2"
