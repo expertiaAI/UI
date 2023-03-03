@@ -89,7 +89,7 @@ Here's an example how you can import and create a new component inside JavaScrip
 ```javascript
 import { Button } from "@expertiaai/ui";
 
-function Example() {
+export default function Example() {
   return (
     <div>
       <p>Primary Large</p>
@@ -122,7 +122,7 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="Buttons.png" alt="Types of buttons">
+<img width="800" height=auto src="Buttons.png" >
 </p>
 
 Primary Large Button is the Default Button,
@@ -135,7 +135,7 @@ Primary Large Button is the Default Button,
 ```javascript
 import { Checkbox1 } from "@expertiaai/ui";
 
-function Example() {
+export default function Example() {
   return (
     <div className="m-auto w-[70vw] mt-10 grid grid-cols-3">
       <div className="flex justify-center flex-col items-center">
@@ -153,7 +153,7 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="checkbox.png" alt="Types of buttons">
+<img width="800" height=auto src="checkbox.png" >
 </p>
 
 checkbox is not checked initially, `defaultChecked` will make the checkbox checked on bydefault.
@@ -163,7 +163,7 @@ checkbox is not checked initially, `defaultChecked` will make the checkbox check
 ```javascript
 import { Chips } from "@expertiaai/ui";
 
-function Example() {
+export default function Example() {
   return (
     <div className="m-auto w-[70vw] mt-10 grid grid-cols-3">
       <div className="flex justify-center flex-col items-center">
@@ -203,7 +203,7 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="chips.png" alt="Types of buttons">
+<img width="800" height=auto src="chips.png" >
 </p>
 
 Default chips are not deletable and don't have any avatars, can add `avatar` and `deletable` tags.
@@ -214,7 +214,7 @@ Default chips are not deletable and don't have any avatars, can add `avatar` and
 ```javascript
 import { DropDown } from "@expertiaai/ui";
 
-function Example() {
+export default function Example() {
   const CompanySizeOptions = [
     "2-10 employees",
     "11-50 employees",
@@ -241,20 +241,21 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="dropdown.png" alt="Types of buttons">
+<img width="800" height=auto src="dropdown.png" >
 </p>
 
 The options for this dropdown are being passed as an array of strings through the "options" prop.The prop "onValueChange" that is being used to capture the value of the selected option.
+
 
 5. Input
 
 ```javascript
 import { Input } from "@expertiaai/ui";
 
-function Example() {
+export default function Example() {
   return (
     <div>
-      <Input className="w-96" placeholder="Write your input here" />
+       <Input className="w-96" placeholder="Write your input here" />
     </div>
   );
 }
@@ -262,9 +263,128 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="input1.png" alt="Types of buttons">
+<img width="800" height=auto src="input1.png" >
 </p>
 
-The options for this dropdown are being passed as an array of strings through the "options" prop.The prop "onValueChange" that is being used to capture the value of the selected option.
 
 
+6. Label
+
+```javascript
+import { Label } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <div><Label>Label 1</Label></div>
+      <div><Label className='bg-green-500'>Label 2</Label></div>
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="Label.png" >
+</p>
+
+You can change the color of the label by adding a className 
+
+7. Toast
+
+```javascript
+import { Toast } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <div>
+      <Toast
+        position="topRight"
+        time="10000"
+        className="px-4"
+        label="Success"
+        open={open}
+        setOpen={setOpen}
+      >
+        <div className="text-white bg-green-500 py-2 px-4 rounded flex justify-center item-center">
+          <svg
+            className="translate-y-1 mr-2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="17"
+            height="17"
+            fill="#fff"
+            viewBox="0 0 256 256"
+          >
+            <rect width="256" height="256" fill="none"></rect>
+            <polyline
+              points="144 84 56 172 12 128"
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></polyline>
+            <polyline
+              points="244 84 156 172 139.9 155.9"
+              fill="none"
+              stroke="#fff"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="24"
+            ></polyline>
+          </svg>
+          <span>This is a success message!</span>
+        </div>
+      </Toast>
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="toast.png" >
+</p>
+
+Toast has 5 input properties
+  1. `open` - Boolean value
+  2. `setOpen` - function to set `open` property.
+  3. `time` - duration till the toast auto hides.
+  4. `label` - simple label for trigger.
+  5. `position` - This property specifies the position of the message. Property given in `camel case`. The default is always `Bottom Left`.
+    1. top
+    2. topLeft
+    3. topRight
+    4. bottom
+    5. bottomLeft
+    6. bottomRight
+
+8. Pagination
+
+```javascript
+import { Pagination } from "@expertiaai/ui";
+
+export default function Example() {
+
+    const [currentColor,setCurrentPage] = useState(1)
+
+  return (
+    <div>
+      <Pagination currentPage ={currentColor} totalPages={10} onPrev={setCurrentPage} onNext={setCurrentPage} />
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="pagination.png" >
+</p>
+
+Pagination has 3 properties as input ,
+  1. `currentPage` - Specifies the current page.
+  2. `totalages` - Specifies total number of pages.
+  3. `onPrev` & `onNext` - Specifies the function to trigger on clicking next or prev.
+
+
+  
