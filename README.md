@@ -122,10 +122,149 @@ function Example() {
 
 <br />
 <p align="center">
-<img width="800" height=auto src="github.png" alt="Types of buttons">
+<img width="800" height=auto src="Buttons.png" alt="Types of buttons">
 </p>
 
-Primary Large Button is the Default Button
-`samll` - converts to Small button
-`secondary` - converts to Secondary (outlined) Button
-`disabled` - converts to Disabled Button
+Primary Large Button is the Default Button,
+`samll` - converts to Small button,
+`secondary` - converts to Secondary (outlined) Button,
+`disabled` - converts to Disabled Button.
+
+2. Checkbox
+
+```javascript
+import { Checkbox1 } from "@expertiaai/ui";
+
+function Example() {
+  return (
+    <div className="m-auto w-[70vw] mt-10 grid grid-cols-3">
+      <div className="flex justify-center flex-col items-center">
+        <div>Check Box - default unchecked</div>
+        <Checkbox1 />
+      </div>
+      <div className="flex justify-center flex-col items-center">
+        <div>Check Box - default checked</div>
+        <Checkbox1 defaultChecked />
+      </div>
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="checkbox.png" alt="Types of buttons">
+</p>
+
+checkbox is not checked initially, `defaultChecked` will make the checkbox checked on bydefault.
+
+3. Chips
+
+```javascript
+import { Chips } from "@expertiaai/ui";
+
+function Example() {
+  return (
+    <div className="m-auto w-[70vw] mt-10 grid grid-cols-3">
+      <div className="flex justify-center flex-col items-center">
+        <div>default chip</div>
+        <Chips>Example</Chips>
+      </div>
+
+      <div className="flex justify-center flex-col items-center">
+        <div>chip with avatar</div>
+        <Chips avatar="https://images.unsplash.com/photo-1677607633013-b733166ab535?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60">
+          Example
+        </Chips>
+      </div>
+
+      <div className="flex justify-center flex-col items-center">
+        <br></br>
+
+        <div>deletable default chip </div>
+        <Chips deletable>Example</Chips>
+      </div>
+
+      <div className="flex justify-center flex-col items-center">
+        <br></br>
+
+        <div>deletable chip with avatar </div>
+        <Chips
+          deletable
+          avatar="https://images.unsplash.com/photo-1677607633013-b733166ab535?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw5fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+        >
+          Example
+        </Chips>
+      </div>
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="chips.png" alt="Types of buttons">
+</p>
+
+Default chips are not deletable and don't have any avatars, can add `avatar` and `deletable` tags.
+
+
+4. DropDown
+
+```javascript
+import { DropDown } from "@expertiaai/ui";
+
+function Example() {
+  const CompanySizeOptions = [
+    "2-10 employees",
+    "11-50 employees",
+    "51-200 employees",
+    "201-500 employees",
+    "501-1000 employees",
+    "1001-5000 employees",
+  ];
+  return (
+    <div className="flex w-full justify-center item-center">
+      <DropDown className="mx-24" options={CompanySizeOptions}>
+        DropDown Selection
+      </DropDown>
+      <DropDown
+        options={CompanySizeOptions}
+        onValueChange={(e) => console.log(e)}
+      >
+        DropDown Selection
+      </DropDown>
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="dropdown.png" alt="Types of buttons">
+</p>
+
+The options for this dropdown are being passed as an array of strings through the "options" prop.The prop "onValueChange" that is being used to capture the value of the selected option.
+
+5. Input
+
+```javascript
+import { Input } from "@expertiaai/ui";
+
+function Example() {
+  return (
+    <div>
+      <Input className="w-96" placeholder="Write your input here" />
+    </div>
+  );
+}
+```
+
+<br />
+<p align="center">
+<img width="800" height=auto src="input1.png" alt="Types of buttons">
+</p>
+
+The options for this dropdown are being passed as an array of strings through the "options" prop.The prop "onValueChange" that is being used to capture the value of the selected option.
+
+
