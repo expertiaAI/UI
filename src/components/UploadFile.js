@@ -33,7 +33,7 @@ export const Upload = ({ children, className, setFile, ...rest }) => {
         name="myFile"
         onChange={handleFileSelect}
         className="hidden"
-        accept=".pdf, .docx, .txt"
+        // accept=".pdf, .docx, .txt"
         {...rest}
       />
       {!thumbnail.name ? (

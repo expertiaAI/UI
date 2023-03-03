@@ -464,7 +464,7 @@ export default function Example() {
 
 Ratings will take 2 props ratings and size.
 
-12. Selector
+12. Slider
 
 ```javascript
 import { Slider1 } from "@expertiaai/ui";
