@@ -2,6 +2,7 @@ const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: path.resolve(__dirname, './src/index.js'),
@@ -10,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         libraryTarget: 'umd',
         umdNamedDefine: true,
-        // globalObject: 'this',
+        globalObject: 'this',
     },
     // externalsPresets: {node: true},
     // externals: [nodeExternals()],
