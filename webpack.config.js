@@ -10,13 +10,10 @@ module.exports = {
         path: path.resolve(__dirname, './dist'),
         libraryTarget: 'umd',
         umdNamedDefine: true,
-        globalObject: 'this',
+        // globalObject: 'this',
     },
     // externalsPresets: {node: true},
-    externals: {
-        react: 'commonjs react',
-        'react-dom': 'commonjs react-dom'
-      },
+    // externals: [nodeExternals()],
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
