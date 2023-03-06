@@ -164,21 +164,23 @@
           var t = {};
           e.exports = function (e, n) {
             var r = (function (e) {
-              if (typeof window === "object") {
-                if (void 0 === t[e]) {
-                  var n = document.querySelector(e);
-                  if (
-                    window.HTMLIFrameElement &&
-                    n instanceof window.HTMLIFrameElement
-                  )
-                    try {
-                      n = n.contentDocument.head;
-                    } catch (e) {
-                      n = null;
-                    }
-                  t[e] = n;
-                }
+                if(typeof document !== 'undefined'){
+
+              if (void 0 === t[e]) {
+                var n = document.querySelector(e);
+                if (
+                  window.HTMLIFrameElement &&
+                  n instanceof window.HTMLIFrameElement
+                )
+                  try {
+                    n = n.contentDocument.head;
+                  } catch (e) {
+                    n = null;
+                  }
+                t[e] = n;
               }
+            }
+
               return t[e];
             })(e);
             if (!r)
