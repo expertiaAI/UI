@@ -12,8 +12,11 @@ module.exports = {
         umdNamedDefine: true,
         globalObject: 'this',
     },
-    externalsPresets: {node: true},
-    externals: [nodeExternals()],
+    // externalsPresets: {node: true},
+    externals: {
+        react: 'commonjs react',
+        'react-dom': 'commonjs react-dom'
+      },
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
