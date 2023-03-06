@@ -13,8 +13,8 @@ module.exports = {
         umdNamedDefine: true,
         globalObject: 'this',
     },
-    // externalsPresets: {node: true},
-    // externals: [nodeExternals()],
+    externalsPresets: {node: true},
+    externals: [nodeExternals()],
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
