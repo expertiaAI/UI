@@ -35,7 +35,7 @@ module.exports = {
             },
             {
                 test: /\.css$/i,
-                use: [{loader:'style-loader'}, {loader:'css-loader'}, {loader:'postcss-loader'},
+                use: [{loader:'css-loader'}, {loader:'postcss-loader'},
                 
             ],
             }
