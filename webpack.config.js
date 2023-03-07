@@ -7,12 +7,6 @@ const jsdom = require('jsdom');
 const { JSDOM } = jsdom;
 
 // Create a fake window object
-const fakeWindow = {
-  location: {
-    href: '/',
-  },
-  addEventListener: () => {},
-};
 
 const fakeDocument = new JSDOM(`<!DOCTYPE html><html><body></body></html>`).window.document;
 
@@ -62,7 +56,6 @@ module.exports = {
     new CleanWebpackPlugin(),
     // Make the fake window object available as a global variable
     new webpack.DefinePlugin({
-      global: JSON.stringify(fakeWindow),
       document: JSON.stringify(fakeDocument),
     }),
   ],
