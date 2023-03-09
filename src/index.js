@@ -1,3 +1,5 @@
+// import "../src/index.css";
+
 export {Avatar1} from "./components/Avatar"
 export {Button} from "./components/Button"
 export {Cards} from "./components/Card"
