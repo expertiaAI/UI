@@ -3,8 +3,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 // const HtmlWebpackPlugin = require('html-webpack-plugin');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
+var jsdom = require('jsdom');
+const { JSDOM } = jsdom;
+
 
 module.exports = {
+    target : 'node',
     entry: path.resolve(__dirname, './src/index.js'),
     output: {
         filename: 'index.js',
@@ -47,6 +51,6 @@ module.exports = {
         ]
     },
     plugins:[
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
     ]
 }
