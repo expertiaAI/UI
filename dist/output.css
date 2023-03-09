@@ -732,6 +732,10 @@ video {
   height: 16px;
 }
 
+.h-\[20p\] {
+  height: 20p;
+}
+
 .h-\[20px\] {
   height: 20px;
 }
@@ -776,10 +780,6 @@ video {
   width: 2rem;
 }
 
-.w-9 {
-  width: 2.25rem;
-}
-
 .w-\[100\%\] {
   width: 100%;
 }
@@ -798,6 +798,10 @@ video {
 
 .w-\[20px\] {
   width: 20px;
+}
+
+.w-\[36px\] {
+  width: 36px;
 }
 
 .w-\[500px\] {

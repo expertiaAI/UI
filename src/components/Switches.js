@@ -12,17 +12,17 @@ export const Switch1 = ({
   let [block, setBlock] = useState(defaultChecked);
 
   const combined = twMerge(
-    "w-9 h-5 rounded-3xl",
+    "w-[36px] h-[20p] rounded-3xl",
     `${
       block
         ? `${switchColor ? `bg-${switchColor}` : "bg-[#6D5DE7]"}`
         : "bg-gray-200"
-    }  `,
+    }`,
     className
   );
   return (
     <div onClick={() => setBlock((e) => !e)} className="flex items-center">
-      <Switch.Root className={combined} id="airplane-mode" {...rest}>
+      <Switch.Root className={combined} {...rest}>
         <Switch.Thumb
           className={`w-[16px] h-[16px] rounded-3xl bg-white block  ${
             block ? "translate-x-[18px]" : "translate-x-[2px]"

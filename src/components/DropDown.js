@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 
 export const DropDown = ({ children, className,options, ...rest }) => {
 
-    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded px-4 py-2.5 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
+    const combined = twMerge(" border border-solid border-[#D9DEE2] text-gray-500 rounded px-4 py-4 flex justify-center items-center text-sm hover:bg-gray-200 ",className)
 
     return(
   <Select.Root {...rest} >

@@ -17,7 +17,8 @@ const colourStyles = {
       backgroundColor: isSelected ? "#6D5DE7"
       : isFocused ? "#6D5DE7" :"#FFF",
       color : isSelected ? "#FFF" :
-      isFocused ? "#FFF":""
+      isFocused ? "#FFF":"",
+      cursor: "pointer"
     }
   }
 };
