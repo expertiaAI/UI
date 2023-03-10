@@ -8,7 +8,7 @@ export const ToolTip = ({ children, className, text, ...rest }) => {
     className
   );
   return (
-    <Tooltip.Provider {...rest}>
+    <Tooltip.Provider delayDuration='0' {...rest}>
       <Tooltip.Root>
         <Tooltip.Trigger asChild>
           <button className="">{children}</button>

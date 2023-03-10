@@ -14,8 +14,8 @@ export const Button = ({
   const combined = twMerge(
     ` ${
       secondary
-        ? "border border-[#6D5DE7] text-[#6D5DE7] hover:text-[#4B4295] hover:border-[#4B4295] bg-white "
-        : " bg-[#6D5DE7] hover:bg-[#4B4295] text-white "
+        ? "border border-[#6D5DE7] text-[#6D5DE7] hover:text-[#6559C1] hover:border-[#6559C1] bg-white "
+        : " bg-[#6D5DE7] hover:bg-[#6559C1] text-white "
     }  duration-200 rounded-[4px]  ${
       small
         ? " text-sm px-4 py-2.5 font-medium "

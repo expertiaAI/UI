@@ -1490,9 +1490,9 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-.hover\:border-\[\#4B4295\]:hover {
+.hover\:border-\[\#6559C1\]:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(75 66 149 / var(--tw-border-opacity));
+  border-color: rgb(101 89 193 / var(--tw-border-opacity));
 }
 
 .hover\:border-\[\#B6AEF3\]:hover {
@@ -1500,14 +1500,14 @@ video {
   border-color: rgb(182 174 243 / var(--tw-border-opacity));
 }
 
-.hover\:bg-\[\#4B4295\]:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(75 66 149 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-\[\#574ab8\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(87 74 184 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#6559C1\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(101 89 193 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-\[\#6D5DE7\]:hover {
@@ -1535,9 +1535,9 @@ video {
   background-color: rgb(87 74 184 / var(--tw-bg-opacity));
 }
 
-.hover\:text-\[\#4B4295\]:hover {
+.hover\:text-\[\#6559C1\]:hover {
   --tw-text-opacity: 1;
-  color: rgb(75 66 149 / var(--tw-text-opacity));
+  color: rgb(101 89 193 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#B6AEF3\]:hover {
