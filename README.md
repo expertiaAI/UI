@@ -564,3 +564,47 @@ export default function Example() {
 
 ToolTip takes only one prop `text` which contains the text.
 
+15. Upload File
+
+```javascript
+import { Upload2 } from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+          <>
+            <Upload2
+              className="flex justify-center items-center relative"
+              onChange={onChange}
+              >
+              <div className="items-center absolute">
+                <span className="flex">
+                  <FiUpload
+                    style={{
+                    fontSize: "1.5em",
+                    marginRight: "10px",
+                    color: "#7E5ECD",
+                    }}
+                    />
+                  <p className="text-[#4E4E4E] font-semibold text-base font-inter">
+                    Drag or Click to upload the JD
+                  </p>
+                </span>
+                  <p className="text-[#4E4E4E] font-medium text-sm font-inter ml-14">
+                    Supported files: .pdf, .docx
+                  </p>
+              </div>
+            </Upload2>
+            <div className="mt-4 text-right">
+              <Button>Cancel</Button>
+              <Button>Upload</Button>
+            </div>
+          </>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="upload2.png" >
+</p>
+
+
