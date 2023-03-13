@@ -571,34 +571,34 @@ import { Upload2 } from "@expertiaai/ui";
 
 export default function Example() {
   return (
-          <>
-            <Upload2
-              className="flex justify-center items-center relative"
-              onChange={onChange}
-              >
-              <div className="items-center absolute">
-                <span className="flex">
-                  <FiUpload
-                    style={{
-                    fontSize: "1.5em",
-                    marginRight: "10px",
-                    color: "#7E5ECD",
-                    }}
-                    />
-                  <p className="text-[#4E4E4E] font-semibold text-base font-inter">
-                    Drag or Click to upload the JD
-                  </p>
-                </span>
-                  <p className="text-[#4E4E4E] font-medium text-sm font-inter ml-14">
-                    Supported files: .pdf, .docx
-                  </p>
-              </div>
-            </Upload2>
-            <div className="mt-4 text-right">
-              <Button>Cancel</Button>
-              <Button>Upload</Button>
-            </div>
-          </>
+    <>
+      <Upload2
+        className="flex justify-center items-center relative"
+        onChange={onChange}
+      >
+        <div className="items-center absolute">
+          <span className="flex">
+            <FiUpload
+              style={{
+                fontSize: "1.5em",
+                marginRight: "10px",
+                color: "#7E5ECD",
+              }}
+            />
+            <p className="text-[#4E4E4E] font-semibold text-base font-inter">
+              Drag or Click to upload the JD
+            </p>
+          </span>
+          <p className="text-[#4E4E4E] font-medium text-sm font-inter ml-14">
+            Supported files: .pdf, .docx
+          </p>
+        </div>
+      </Upload2>
+      <div className="mt-4 text-right">
+        <Button>Cancel</Button>
+        <Button>Upload</Button>
+      </div>
+    </>
   );
 }
 ```
@@ -607,4 +607,69 @@ export default function Example() {
 <img width="800" height=auto src="upload2.png" >
 </p>
 
+16. Typography
+
+```javascript
+import {
+  H1,
+  H2,
+  H3,
+  H4,
+  H5,
+  H6,
+  Subtitle1,
+  Subtitle2,
+  Body1,
+  Body2,
+  Caption1,
+  Caption2,
+  ButtonLg,
+  ButtonMd,
+  ButtonSm,
+} from "@expertiaai/ui";
+
+export default function Example() {
+  return (
+    <>
+      <div className="flex flex-col justify-between w-[40vw] m-auto mt-10">
+        <H1>Heading 1</H1>
+        <br />
+        <H2>Heading 2</H2>
+        <br />
+        <H3>Heading 3</H3>
+        <br />
+        <H4>Heading 4</H4>
+        <br />
+        <H5>Heading 5</H5>
+        <br />
+        <H6>Heading 6</H6>
+      </div>
+      <div className="flex flex-col justify-between w-[40vw] m-auto mt-10">
+        <br />
+        <Subtitle1>Subtitle1</Subtitle1>
+        <br />
+        <Subtitle2>Subtitle2</Subtitle2>
+        <br />
+        <Body1>Body1</Body1>
+        <br />
+        <Body2>Body2</Body2>
+        <br />
+        <Caption1>Caption1</Caption1>
+        <br />
+        <Caption2>Caption2</Caption2>
+        <br />
+        <ButtonLg>Button Large</ButtonLg>
+        <br />
+        <ButtonMd>Button Medium</ButtonMd>
+        <br />
+        <ButtonSm>Button Small</ButtonSm>
+      </div>
+    </>
+  );
+}
+```
+
+<p align="center">
+<img width="800" height=auto src="typo.png" >
+</p>
 
