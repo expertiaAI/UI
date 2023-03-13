@@ -436,7 +436,7 @@ The options for this dropdown are being passed as an array of objects with 2 key
 11. Ratings
 
 ```javascript
-import { Radio } from "@expertiaai/ui";
+import { Ratings } from "@expertiaai/ui";
 
 export default function Example() {
   return (
