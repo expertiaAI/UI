@@ -19,7 +19,7 @@ export const CheckBox = ({ className,defaultChecked, ...rest }) => {
       <form>
         <Checkbox.Root
           checked={checked}
-          onClick={() =>
+          onValueChange={() =>
             setChecked((e) => {
               if (e === true) return false;
               else return true;
