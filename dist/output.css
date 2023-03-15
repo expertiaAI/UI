@@ -985,6 +985,10 @@ video {
   border-radius: 100px;
 }
 
+.rounded-\[2px\] {
+  border-radius: 2px;
+}
+
 .rounded-\[4px\] {
   border-radius: 4px;
 }
@@ -1058,11 +1062,6 @@ video {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
-.border-primary2 {
-  --tw-border-opacity: 1;
-  border-color: rgb(87 74 184 / var(--tw-border-opacity));
 }
 
 .bg-\[\#6D5DE7\] {
