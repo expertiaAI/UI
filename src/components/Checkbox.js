@@ -18,13 +18,13 @@ export const CheckBox = ({ className,defaultChecked, ...rest }) => {
     <div className="">
       <form>
         <Checkbox.Root
-          // checked={checked}
-          // onCheckedChange={() =>
-          //   setChecked((e) => {
-          //     if (e === true) return false;
-          //     else return true;
-          //   })
-          // }
+          checked={checked}
+          onClick={() =>
+            setChecked((e) => {
+              if (e === true) return false;
+              else return true;
+            })
+          }
           className={combined}
           {...rest}
         >
