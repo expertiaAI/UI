@@ -1,13 +1,15 @@
 import React from "react";
 import * as Checkbox from "@radix-ui/react-checkbox";
+import { twMerge } from "tailwind-merge";
 
 
 export const CheckBox = ({ className, ...rest }) => {
+  const combined = twMerge("flex justify-center items-center w-4 h-4 rounded-[2px] border border-[#6D5DE7]",className)
   return (
     <div className="">
       <form>
         <Checkbox.Root
-          className="flex justify-center items-center w-4 h-4 rounded-[2px] border border-[#6D5DE7]"
+          className={combined}
           {...rest}
         >
           <Checkbox.Indicator>
