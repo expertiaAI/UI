@@ -12,7 +12,7 @@ export const Switch1 = ({
   let [block, setBlock] = useState(defaultChecked);
 
   const combined = twMerge(
-    "w-[36px] h-[20p] rounded-3xl",
+    "w-[36px] h-[20px] rounded-3xl",
     `${
       block
         ? `${switchColor ? `bg-${switchColor}` : "bg-[#6D5DE7]"}`

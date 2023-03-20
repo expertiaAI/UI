@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 export const Chips = ({
   children,
   className,
-  className_deletable,
+  small,
   deletable,
   avatar,
   ...rest
@@ -13,11 +13,11 @@ export const Chips = ({
   let [del, setDel] = useState(true);
   // useEffect(() => console.log(deletable && del), [del]);
   const combined = twMerge(
-    " text-sm bg-[#F2EDF4] text-[#222121] px-1.5 py-1.5 rounded-full flex items-center ",
+    ` ${small?"text-xs px-1 py-1":"text-sm px-2 py-1.5"} border border-[#CDCDCD] text-[#14102F] rounded flex items-center `,
     className
   );
 
-  const combined2 = twMerge(' bg-gray-400 p-0.5 rounded-full text-white cursor-pointer ',className_deletable)
+  // const combined2 = twMerge(' bg-gray-400 p-0.5 rounded-full text-white cursor-pointer ',className_deletable)
   return (
     <div className="inline-block">
       {del ? (
@@ -33,7 +33,7 @@ export const Chips = ({
           {deletable && del ? (
             <div
               onClick={() => setDel(false)}
-              className={combined2}
+              // className={combined2}
             >
               <svg
                 width="12"
