@@ -26,18 +26,7 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
-      - run: 
-          echo "add deploy key"
-          eval "$(ssh-agent -s)"
-          ssh-add <(echo "${{secrets.SSH_PRIVATE_KEY}}" | base64 -d)
-
-          echo "disable strict host key check"
-          touch ~/.ssh/config
-
-          echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
-
-          echo '@expertiaai:registry = https://npm.pkg.github.com' > .npmrc;
-          npm ci 
+      - run: npm ci 
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
