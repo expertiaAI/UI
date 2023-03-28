@@ -1588,20 +1588,3 @@ video {
     color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }
-
-@media (min-width: 640px) {
-  .sm\:px-1 {
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-  }
-
-  .sm\:py-1 {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-
-  .sm\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-}
