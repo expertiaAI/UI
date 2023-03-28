@@ -1588,3 +1588,10 @@ video {
     color: rgb(75 85 99 / var(--tw-text-opacity));
   }
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .sm\:bg-red-500 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+  }
+}
