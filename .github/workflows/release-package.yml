@@ -28,7 +28,7 @@ jobs:
           registry-url: https://npm.pkg.github.com/
           always-auth: true
           scope: '@expertiaai'
-      - run: npm ci
+      - run: npm ci -f
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
