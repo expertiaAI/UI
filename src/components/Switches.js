@@ -24,9 +24,7 @@ export const Switch1 = ({
     <div className="flex items-center">
       <Switch.Root className={combined} {...rest}>
         <Switch.Thumb
-          className={`w-[16px] h-[16px] rounded-3xl bg-white block  ${
-            block ? "translate-x-[18px]" : "translate-x-[2px]"
-          } duration-200`}
+          className={`w-[16px] h-[16px] rounded-3xl bg-white block translate-x-[2px] duration-200`}
         />
       </Switch.Root>
     </div>
