@@ -6,10 +6,10 @@ import { twMerge } from "tailwind-merge";
 export const Switch1 = ({
   className,
   switchColor,
-  defaultChecked,
+  // defaultChecked,
   ...rest
 }) => {
-  let [block, setBlock] = useState(defaultChecked);
+  // let [block, setBlock] = useState(defaultChecked);
 
   const combined = twMerge(
     "w-[36px] h-[20px] rounded-3xl",
@@ -21,7 +21,7 @@ export const Switch1 = ({
     className
   );
   return (
-    <div onClick={() => setBlock((e) => !e)} className="flex items-center">
+    <div className="flex items-center">
       <Switch.Root className={combined} {...rest}>
         <Switch.Thumb
           className={`w-[16px] h-[16px] rounded-3xl bg-white block  ${

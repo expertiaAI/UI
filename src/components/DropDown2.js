@@ -3,7 +3,7 @@ import React from "react";
 export const DropDown2 = ({ options, onValueChange }) => {
   return (
     <div className="z-50 absolute left-0 w-full bg-white border border-gray-300 rounded outline-none border-solid max-h-44 overflow-y-scroll">
-      {options.map((option) => {
+      {options?.map((option) => {
         // console.log(jobTitleList);
         return (
           <div
