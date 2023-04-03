@@ -1,11 +1,14 @@
 import React, { useState } from "react";
-import { twMerge } from "tailwind-merge";
 
-export const Modal = ({ children, isOpen, setIsOpen, className, ...rest }) => {
-  const combined = twMerge(
-    "bg-white inset-0 rounded-lg  overflow-hidden shadow-xl transform transition-all ease-out h-10 w-20 ",
-    className
-  );
+export const Modal = ({
+  children,
+  text,
+  isOpen,
+  setIsOpen,
+  className,
+  ...rest
+}) => {
+
 
   const handleOpen = () => {
     setIsOpen(true);
@@ -36,8 +39,8 @@ export const Modal = ({ children, isOpen, setIsOpen, className, ...rest }) => {
 
 
       `}</style>
-      <button className="text-black p-2" onClick={handleOpen}>
-        open modal
+      <button onClick={handleOpen}>
+        {text}{" "}
       </button>
       {isOpen && (
         <div className="fixed inset-0 w-[100vw] h-[100vh] z-30 flex justify-center items-center overflow-hidden">
@@ -51,7 +54,7 @@ export const Modal = ({ children, isOpen, setIsOpen, className, ...rest }) => {
             ></div>
           </div>
           <div
-            className={combined}
+            className={` bg-white inset-0  overflow-hidden shadow-xl transform transition-all ease-out `}
             style={{
               animation: "zoomIn 0.1s ",
             }}
