@@ -54,7 +54,7 @@ export const Modal = ({
             ></div>
           </div>
           <div
-            className={` bg-white inset-0  overflow-hidden shadow-xl transform transition-all ease-out `}
+            className={` inset-0  overflow-hidden shadow-xl transform transition-all ease-out `}
             style={{
               animation: "zoomIn 0.1s ",
             }}
