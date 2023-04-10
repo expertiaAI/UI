@@ -6,6 +6,7 @@ export const Modal = ({
   isOpen,
   setIsOpen,
   className,
+  outSideClickDisabled,
   ...rest
 }) => {
 
@@ -15,7 +16,9 @@ export const Modal = ({
   };
 
   const handleClose = () => {
-    setIsOpen(false);
+    if(!outSideClickDisabled){
+      setIsOpen(false);
+    }
   };
 
   return (
