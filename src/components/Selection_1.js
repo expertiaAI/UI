@@ -4,7 +4,7 @@ import { BsCheck2 } from "react-icons/bs";
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-export const Selector1 = ({ children, className, defaultChecked, ...rest }) => {
+export const Selector1 = ({ children, className, defaultChecked,noIcon, ...rest }) => {
   const [selection, setSelection] = useState(defaultChecked);
   const combined = twMerge(
     "text-sm flex justify-start items-center p-2 pl-3 border-[1px] duration-200 rounded cursor-pointer",
@@ -15,9 +15,9 @@ export const Selector1 = ({ children, className, defaultChecked, ...rest }) => {
   );
   return (
     <div className={combined} {...rest} onClick={() => setSelection((e) => !e)}>
-      <div className="pr-3">
+      {noIcon?"":<div className="pr-3">
         {!selection ? <BsPlus className="scale-125" /> : <BsCheck2 />}
-      </div>
+      </div>}
       <div>{children}</div>
     </div>
   );
