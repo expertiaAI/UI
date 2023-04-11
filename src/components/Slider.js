@@ -5,7 +5,7 @@ import { twMerge } from "tailwind-merge";
 export const Slider1 = ({ children, className, value, ...rest }) => {
     let [trigger,setTrigger] = useState(false)
   const combined = twMerge(
-    "relative flex items-center w-[500px] rounded-2xl",
+    "relative flex items-center w-full rounded-2xl",
     className
   );
   return (
