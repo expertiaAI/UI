@@ -54,9 +54,13 @@ export const Modal = ({
           </div>
           <div
 className={` inset-0  overflow-y-scroll shadow-xl transform mx-5 max-h-[90vh] ease-out `}
-            style={{
-              animation: "zoomIn 0.1s ",
-            }}
+style={{
+  animation: "zoomIn 0.1s ",
+  overflow: '-moz-scrollbars-none',
+  '-ms-overflow-style': 'none',
+  scrollbarWidth: 'none',
+  WebkitScrollbar: 'none'
+}}
           >
             {children}
           </div>
