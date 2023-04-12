@@ -37,12 +37,16 @@ export const Modal = ({
                 from {opacity: 0}
                 to {opacity: 0.75}
                }
+            
+            .scrollbar-hidden::-webkit-scrollbar {
+                display: none;
+            }
 
 
       `}</style>
       <button onClick={handleOpen}>{text} </button>
       {isOpen && (
-        <div className="fixed inset-0 w-[100vw] h-[100vh] z-30 flex justify-center items-center overflow-hidden">
+        <div className="fixed inset-0 w-[100vw] h-[100vh] z-30 flex justify-center items-center overflow-hidden ">
           <div
             className="fixed inset-0 transition-opacity w-full h-full "
             onClick={handleClose}
@@ -53,14 +57,10 @@ export const Modal = ({
             ></div>
           </div>
           <div
-className={` inset-0  overflow-y-scroll shadow-xl transform mx-5 max-h-[90vh] ease-out `}
-style={{
-  animation: "zoomIn 0.1s ",
-  overflow: '-moz-scrollbars-none',
-  '-ms-overflow-style': 'none',
-  scrollbarWidth: 'none',
-  WebkitScrollbar: 'none'
-}}
+            className={` inset-0  overflow-y-scroll  shadow-xl transform  mx-5 max-h-[90vh] ease-out scrollbar-hidden`}
+            style={{
+              animation: "zoomIn 0.1s ",
+            }}
           >
             {children}
           </div>
