@@ -9,14 +9,12 @@ export const Modal = ({
   outSideClickDisabled,
   ...rest
 }) => {
-
-
   const handleOpen = () => {
     setIsOpen(true);
   };
 
   const handleClose = () => {
-    if(!outSideClickDisabled){
+    if (!outSideClickDisabled) {
       setIsOpen(false);
     }
   };
@@ -42,9 +40,7 @@ export const Modal = ({
 
 
       `}</style>
-      <button onClick={handleOpen}>
-        {text}{" "}
-      </button>
+      <button onClick={handleOpen}>{text} </button>
       {isOpen && (
         <div className="fixed inset-0 w-[100vw] h-[100vh] z-30 flex justify-center items-center overflow-hidden">
           <div
@@ -57,7 +53,7 @@ export const Modal = ({
             ></div>
           </div>
           <div
-            className={` inset-0  overflow-hidden shadow-xl transform transition-all ease-out `}
+className={` inset-0  overflow-y-scroll shadow-xl transform mx-5 max-h-[90vh] ease-out `}
             style={{
               animation: "zoomIn 0.1s ",
             }}
