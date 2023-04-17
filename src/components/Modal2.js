@@ -52,12 +52,12 @@ export const Modal = ({
             onClick={handleClose}
           >
             <div
-              className="absolute inset-0 bg-slate-600 opacity-75"
+              className="absolute inset-0 bg-gray-600 opacity-75"
               style={{ animation: " fadeIn 0.1s linear" }}
             ></div>
           </div>
           <div
-            className={` inset-0  overflow-y-scroll  shadow-xl transform  mx-5 max-h-[90vh] ease-out scrollbar-hidden`}
+            className={` inset-0  overflow-y-scroll transform  mx-5 max-h-[90vh] ease-out scrollbar-hidden`}
             style={{
               animation: "zoomIn 0.1s ",
             }}
