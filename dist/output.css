@@ -770,10 +770,6 @@ video {
   max-height: 11rem;
 }
 
-.max-h-\[90vh\] {
-  max-height: 90vh;
-}
-
 .min-h-full {
   min-height: 100%;
 }

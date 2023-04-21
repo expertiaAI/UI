@@ -7,6 +7,7 @@ export const Modal = ({
   setIsOpen,
   className,
   outSideClickDisabled,
+  containerHeight,
   ...rest
 }) => {
   const handleOpen = () => {
@@ -57,7 +58,7 @@ export const Modal = ({
             ></div>
           </div>
           <div
-            className={` inset-0  overflow-y-scroll transform  mx-5 max-h-[90vh] ease-out scrollbar-hidden`}
+            className={` inset-0  overflow-y-scroll transform  mx-5 ${containerHeight} ease-out scrollbar-hidden`}
             style={{
               animation: "zoomIn 0.1s ",
             }}
