@@ -47,7 +47,7 @@ export const Modal = ({
 
 
       `}</style>
-      <button className={comb} onClick={handleOpen}>{text} </button>
+      {/* <button className={comb} onClick={handleOpen}>{text} </button> */}
       {isOpen && (
         <div className="fixed inset-0 w-[100vw] h-[100vh] z-30 flex justify-center items-center overflow-hidden ">
           <div
