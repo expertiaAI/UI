@@ -1175,6 +1175,11 @@ video {
   background-color: transparent;
 }
 
+.bg-violet-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 243 255 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1633,6 +1638,11 @@ video {
 .hover\:bg-primary2:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(87 74 184 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-violet-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 243 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#6559C1\]:hover {
