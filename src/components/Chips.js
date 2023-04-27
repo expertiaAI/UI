@@ -13,7 +13,7 @@ export const Chips = ({
   let [del, setDel] = useState(true);
   // useEffect(() => console.log(deletable && del), [del]);
   const combined = twMerge(
-    ` ${small?"text-xs px-1 py-1":"text-sm px-2 py-1.5"} border border-[#CDCDCD] text-[#14102F] rounded flex items-center `,
+    ` ${small?"text-xs px-1 py-1":"text-sm px-2 py-1.5"} border border-[#CDCDCD] text-[#2E2E2E] rounded flex items-center `,
     className
   );
 
