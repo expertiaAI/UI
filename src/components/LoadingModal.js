@@ -32,10 +32,9 @@ export const LoadingModal = ({ fetching, setFetching }) => {
         }
         
         .load div{
-            width: 10px;
-            height: 10px;
-            // background-color: rgb(11, 169, 213);
-            background-color: #6D5DE7;
+            width: 15px;
+            height: 15px;
+            background-color: rgb(11, 169, 213);
             border-radius: 50%;
             margin: 0 5px;
             animation-name: up-and-down;
@@ -64,12 +63,17 @@ export const LoadingModal = ({ fetching, setFetching }) => {
           `}
         </style>
 
-        <div class="load">
-          <div class="one"></div>
-          <div class="two"></div>
-          <div class="three"></div>
+        <div className="flex flex-col justify-center items-center  p-8 px-12 rounded-md bg-transparent relative  w-[30vw] h-[30vw] ">
+          <div class="load">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+          </div>
+          <span className="text-xl text-white font-semibold text-center translate-y-[50px]">
+            {" "}
+            Loading...
+          </span>
         </div>
-        <div className="text-white font-semibold "> Loading...</div>
       </>
     </Modal>
   );
