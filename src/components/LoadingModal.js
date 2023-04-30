@@ -34,7 +34,7 @@ export const LoadingModal = ({ fetching, setFetching }) => {
         .load div{
             width: 15px;
             height: 15px;
-            background-color: rgb(11, 169, 213);
+            background-color: #6D5DE7;
             border-radius: 50%;
             margin: 0 5px;
             animation-name: up-and-down;
