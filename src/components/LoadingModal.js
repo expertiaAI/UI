@@ -28,7 +28,7 @@ export const LoadingModal = ({ fetching, setFetching }) => {
         .load{
             display: flex;
             justify-content: center;
-            margin: 200px auto;
+            // margin: 20px auto;
         }
         
         .load div{
