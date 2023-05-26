@@ -1,6 +1,6 @@
 {
   "name": "@expertiaai/ui",
-  "version": "0.0.136",
+  "version": "0.0.137",
   "description": "Expertia.AI Design Systems",
   "main": "dist/index.js",
   "module": "dist/index.js",
