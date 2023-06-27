@@ -666,6 +666,10 @@ video {
   margin: 1rem;
 }
 
+.m-\[4px\] {
+  margin: 4px;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -1284,6 +1288,10 @@ video {
   padding: 2rem;
 }
 
+.p-\[4px\] {
+  padding: 4px;
+}
+
 .px-1 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1354,12 +1362,21 @@ video {
   padding-bottom: 14px;
 }
 
+.py-\[6px\] {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
 .pl-2 {
   padding-left: 0.5rem;
 }
 
 .pl-3 {
   padding-left: 0.75rem;
+}
+
+.pl-\[9px\] {
+  padding-left: 9px;
 }
 
 .pr-1 {
