@@ -36,10 +36,10 @@ export const DropDown3 = ({
   };
 
   return (
-    <div className="relative z-10">
+    <div className="relative z-[1]">
       {isOpen ? (
         <div
-          className="w-[100vw] h-[100vh] fixed top-0 left-0 -z-10"
+          className="w-[100vw] h-[100vh] fixed top-0 left-0 -z-[1]"
           onClick={() => setIsOpen(false)}
         ></div>
       ) : (
