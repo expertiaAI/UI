@@ -59,7 +59,7 @@ export const DropDown3 = ({
         </p>
       </button>
       {isOpen && (
-        <ul className={combined2}>
+        <div className={combined2}>
           {options.map((option) => (
             <li
               key={option.value}
@@ -78,7 +78,7 @@ export const DropDown3 = ({
               {option.label}
             </li>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
