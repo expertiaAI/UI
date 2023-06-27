@@ -63,7 +63,7 @@ export const DropDown3 = ({
           {options.map((option) => (
             <li
               key={option.value}
-              className={`hover:bg-[#6D5DE7]  hover:text-white text-sm p-1  m-1 flex items-center rounded py-1.5 pl-3 ${
+              className={`hover:bg-[#6D5DE7]  hover:text-white text-sm p-[4px] m-[4px] flex items-center rounded py-[6px] pl-[9px] ${
                 selectedOption?.label == option.label
                   ? "bg-[#6D5DE7] text-white hover:bg-[#6d5de7e2]"
                   : "text-black"
