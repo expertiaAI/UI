@@ -14,7 +14,7 @@ export const DropDown3 = ({
 
   useEffect(() => {
     setSelectedOption(defaultValue);
-  }, []);
+  }, [defaultValue]);
 
   const combined = twMerge(
     ` border border-solid border-[#D9DEE2] text-gray-500 rounded px-4 py-4 flex justify-between items-center text-sm hover:bg-gray-200 `,
