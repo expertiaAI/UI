@@ -19,6 +19,7 @@ export const Toast = ({
       time ? time : 4000
     );
   };
+  if(time) handleClick()
   let c1 = "left-0 bottom-0";
   let c2 = "-translate-x-full opacity-0";
   let c3 = "translate-x-0 opacity-100";
