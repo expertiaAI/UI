@@ -6,7 +6,7 @@ export const Ratings=({ ratings,size })=> {
 //   console.log(percentage);
   for (let i = 0; i < 5; i++) {
     startRating.push(
-      <div key={i} className="relative">
+      <div key={i} className="relative px-1.5">
         <span
         //   className={`  ${
         //     i + 1 <= ratings ? "text-yellow-400" : "text-gray-200"
