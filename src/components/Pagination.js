@@ -57,7 +57,7 @@ export const Pagination = ({
     <div className="inline-block">
       <div
         //   onClick={() => console.log(currentPage)}
-        className="flex gap-2 rounded-md "
+        className="flex gap-2 rounded-md cursor-pointer"
         aria-label="Pagination"
       >
         <div
