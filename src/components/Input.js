@@ -9,8 +9,6 @@ export const Input = ({ label, children, className, ...rest }) => {
     className
   );
 
-  console.log(label);
-
   return (
     <div className="flex items-center">
       {label ? (
