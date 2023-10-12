@@ -36,7 +36,7 @@ export const Button = ({
 
   return (
     <>
-      <button className={combined} {...rest}>
+      <button className={combined} disabled={disabled} {...rest}>
         {loading ? (
           <svg
             className="animate-spin w-full"
